@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Battle for Job! {% endblock %}
+
+{% block body %}
+
+  {% if error is defined %}
+
+    {{ error }}
+
+  {% endif %}
+
+  {% if winner is defined %}
+
+    <h1>Winner is {{ winner }} with {{ soldiersCount }} soldiers left!
+      Total turns: {{ turns }}</h1>
+
+  {% endif %}
+
+{% endblock %}
