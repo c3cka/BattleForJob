@@ -114,7 +114,10 @@ class Start {
 
   /**
    * Simulate attack by dealing damage to defendSoldier that is calculated this way:
-   * 1) If attackSoldier
+   * 1) If defendSoldier is lucky, he dodges tha attack, no one is hurt, going to next turn
+   * 2) If defendSoldier has got specialSkill and is lucky gets one of defending specialSkills like MagicShield or
+   * FirstAid
+   * 3) If attackerSoldier has got specialSkill and is lucky gets specialSkill RapidStrike and attacks twice
    */
   protected function shoot () {
 
